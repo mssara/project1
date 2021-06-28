@@ -1,0 +1,146 @@
+<html>
+
+<head>
+<title> control arm </title>
+
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-align: left;
+}
+
+.slider {
+  width: 100%;
+
+}
+
+div {
+   text-align: center;
+}
+
+button {
+    color: black;
+  padding: 8px 20px;
+}
+</style>
+</head>
+
+<body>
+<form action="arm.php" method="post">
+
+<h1>Control Board</h1>
+
+<div>
+  <p>Motor1: </p>
+  <input type="range" min="0" max="180" value="0" class="slider" id="m1" name="m1">
+  <p>Value: <span id="output1" name="n1"></span></p>	<br>
+</div>
+<script>
+var number1 = document.getElementById("m1");
+var out1 = document.getElementById("output1");
+out1.innerHTML = number1.value;
+
+number1.oninput = function(){
+    out1.innerHTML= this.value;
+}
+</script>
+
+
+<div>
+  <p>Motor2: </p>
+  <input type="range" min="0" max="180" value="0" class="slider" id="m2" name="m2">
+  <p>Value: <span id="output2" name="n2"></span></p>	<br>
+</div>
+<script>
+var number2 = document.getElementById("m2");
+var out2 = document.getElementById("output2");
+out2.innerHTML = number2.value;
+
+number2.oninput = function(){
+    out2.innerHTML= this.value;
+}
+</script>
+
+
+<div>
+  <p>Motor3: </p>
+  <input type="range" min="0" max="180" value="0" class="slider" id="m3" name="m3">
+  <p>Value: <span id="output3" name="n3"></span></p>	<br>
+</div>
+<script>
+var number3 = document.getElementById("m3");
+var out3 = document.getElementById("output3");
+out3.innerHTML = number3.value;
+
+number3.oninput = function(){
+    out3.innerHTML= this.value;
+}
+</script>
+
+
+<div>
+  <p>Motor4: </p>
+  <input type="range" min="0" max="180" value="0" class="slider" id="m4" name="m4">
+  <p>Value: <span id="output4" name="n4"></span></p>	<br>
+</div>
+<script>
+var number4 = document.getElementById("m4");
+var out4 = document.getElementById("output4");
+out4.innerHTML = number4.value;
+
+number4.oninput = function(){
+    out4.innerHTML= this.value;
+}
+</script>
+
+
+<div>
+  <p>Motor5: </p>
+  <input type="range" min="0" max="180" value="0" class="slider" id="m5" name="m5">
+  <p>Value: <span id="output5" name="n5"></span></p>	<br>
+</div>
+<script>
+var number5 = document.getElementById("m5");
+var out5 = document.getElementById("output5");
+out5.innerHTML = number5.value;
+
+number5.oninput = function(){
+    out5.innerHTML= this.value;
+}
+</script>
+
+
+<div>
+  <p>Motor6: </p>
+  <input type="range" min="0" max="180" value="0" class="slider" id="m6" name="m6">
+  <p>Value: <span id="output6" name="n6"></span></p>	<br>
+</div>
+<script>
+var number6 = document.getElementById("m6");
+var out6 = document.getElementById("output6");
+out6.innerHTML = number6.value;
+
+number6.oninput = function(){
+    out6.innerHTML= this.value;
+}
+</script>
+
+<div>
+<button name="save" id="save">Save</button>
+<button name="run" id="run">Run</button>
+
+</div>
+
+</form>
+</body>
+</html>
